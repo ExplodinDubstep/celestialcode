@@ -27,8 +27,13 @@ h1 {
   margin-right: 80px; /* Adjust the margin to your liking */
 }
 
+.banner-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the child elements */
+  align-items: center;     /* Vertically centers the child elements */
+  height: 100vh;           /* Sets the height to 100% of the viewport height */
+}
+
 .banner-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%; /* Makes sure the image doesn't overflow */
 }
