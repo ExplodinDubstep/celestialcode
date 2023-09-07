@@ -1,0 +1,28 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen-div {
+  background-color: darkblue;
+  width: 100%;
+  height: 100vh;  /* Use viewport height to cover full screen */
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.welcome, .to, .celestial {
+  text-align: center;
+}
+
+.to .pipes, .to .text {
+  display: inline-block; /* Allow for margins */
+}
+
+.to .text {
+  margin-left: 80px; /* Adjust the margin to your liking */
+  margin-right: 80px; /* Adjust the margin to your liking */
+}
