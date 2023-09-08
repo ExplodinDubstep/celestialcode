@@ -9,7 +9,7 @@
     <audio id="myAudio">
       <source src="en_4_celestialcode_intro.wav" type="audio/wav">
     </audio>
-    <audio id="ambientAudio">
+    <audio id="ambientAudio" preload="auto">
       <source src="websiteIntro.wav" type="audio/wav">
     </audio>
     <div class="fullscreen-div">
@@ -34,12 +34,13 @@
         var ambient = document.getElementById("ambientAudio");
         
         // Set initial volume levels
-        audio.volume = 1.0;  // Full volume
-        ambient.volume = 0.5;  // 50% volume
+        audio.volume = 1.0;  // sets myAduio volume
+        ambient.volume = 0.2;  // sets ambientAudio volume
         
         document.getElementById("startButton").addEventListener("click", function() {
           audio.play();
           ambient.play();
+        document.getElementById("introScreen").style.display = "none"; // This will hide the intro screen
         });
       });
     </script>
