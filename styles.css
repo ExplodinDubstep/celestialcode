@@ -60,3 +60,17 @@ h1 {
 }
 
 
+.banner-container {
+  position: relative; /* This sets up a 'reference' for absolutely positioned elements */
+}
+
+#startJourney {  /* or you can keep using your existing ID #startButton, just make sure it's consistent with your HTML */
+  position: absolute; /* This will position the button relative to the nearest 'relative' parent */
+  top: 50%;  /* Vertically centered */
+  left: 50%; /* Horizontally centered */
+  transform: translate(-50%, -50%); /* Needed to truly center the button */
+  z-index: 1; /* Places it above other elements */
+}
+
+
+
