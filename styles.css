@@ -14,7 +14,7 @@ body, html {
   display: flex;
   justify-content: center; /* Horizontally centers the child elements */
   align-items: center;     /* Vertically centers the child elements */
-  height: 100vh;           /* Sets the height to 100% of the viewport height */
+  height: 80vh;           /* Sets the height to 80% of the viewport height */
 }
 
 .banner-image {
