@@ -37,6 +37,27 @@
     audio.play();
   });
 </script>
+
+<script>    
+	document.addEventListener("DOMContentLoaded", function() {
+	  const introScreen = document.getElementById("introScreen");
+	  const startButton = document.getElementById("startButton");
+	  const audio = document.getElementById("myAudio");
+
+  	startButton.addEventListener("click", function() {
+  	  // Play the audio
+ 	   audio.play();
+	
+  	  // Hide the intro screen
+  	  introScreen.style.display = "none";
+
+  	  // Here you can add more animations or transitions
+ 	 });
+	});	
+
+</script>
+
+
 	    
     </body>
 </html>
