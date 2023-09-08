@@ -11,29 +11,30 @@
     <body>
 
 	    
-	    <script>
-  window.addEventListener("load", function(){
-    var audio = document.getElementById("myAudio");
-    audio.play();
-  });
+ <script>
+ 	 window.addEventListener("load", function(){
+   	 var audio = document.getElementById("myAudio");
+  	  audio.play();
+	  });
 </script>
 
 <script>    
-	document.addEventListener("DOMContentLoaded", function() {
-	  const introScreen = document.getElementById("introScreen");
-	  const startButton = document.getElementById("startButton");
-	  const audio = document.getElementById("myAudio");
+	window.addEventListener("load", function(){
+	  var audio = document.getElementById("myAudio");
+ 	 var ambient = document.getElementById("ambientAudio");
 
-  	startButton.addEventListener("click", function() {
-  	  // Play the audio
- 	   audio.play();
-	
-  	  // Hide the intro screen
-  	  introScreen.style.display = "none";
+	  // Set initial volume levels
+	  audio.volume = 1.0;  // Full volume
+ 	 ambient.volume = 0.5;  // 50% volume
 
-  	  // Here you can add more animations or transitions
- 	 });
-	});	
+	  // Your existing code to play the intro audio
+	  document.getElementById("startJourney").addEventListener("click", function() {
+  	  audio.play();
+
+   	 // Also play the ambient music
+ 	   ambient.play();
+	  });
+	});
 
 </script>
 	    
